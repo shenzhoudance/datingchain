@@ -4,34 +4,150 @@
 <head>
     <meta charset="utf-8">
     <title>datingchaia</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./js/bootstrap.min.css" rel="stylesheet">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/monokai_sublime.min.css">
+    <link rel="stylesheet" href="./css/magnific-popup.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/screen.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/nebPay.js"></script>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
 
 </head>
 
 <body>
-    <div class="nav">
-        <div class="nav-left">
-            <img src="image/logo.png" alt="">
-        </div>
+        <style type="text/css">
+            .ripple-container {}
+        
+            .ripple-container .ripple {
+              background-color: rgba(255, 255, 255, 0.4);
+              animation: ripple 2s forwards cubic-bezier(0, 0, 0.2, 1);
+            }
+        
+            @keyframes ripple {
+              0% {
+                transform: scale(0);
+                opacity: 1;
+              }
+              80% {
+                transform: scale(1);
+              }
+              100% {
+                opacity: 0;
+              }
+            }
+        
+            .button1 {
+              background-color: rgb(230, 179, 69);
+              color: white;
+              padding: 10px 20px;
+              border: 0;
+              font-size: 14px;
+              cursor: pointer
+            }
+        
+            #savebidbutton {
+              background-color: #4560E6;
+              color: white;
+              padding: 10px 20px;
+              border: 0;
+              font-size: 14px;
+              cursor: pointer
+            }
+        
+            .button2 {
+              background-color: #F2BC18;
+              color: white;
+              padding: 10px 20px;
+              border: 0;
+              font-size: 14px;
+              cursor: pointer
+            }
+        
+            .button3 {
+              background-color: #12B362;
+              color: white;
+              padding: 10px 20px;
+              border: 0;
+              font-size: 14px;
+              cursor: pointer
+            }
+          </style>
 
-        <div class="nav-search">
-            <input type="text" class="form-control" placeholder="搜索">
-            <i class="fa fa-search" aria-hidden="true"></i>
-        </div>
+    <div class="container">
 
-        <div class="nav-right">
-            <ul>
-                <li>展示自我</li>
-                <li>匹配对象</li>
-                <li>约会成就</li>
-                <li>账户余额</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="banner">
+            <section class="content-wrap">
+              <div class="container">
+                <div class="row">
+                  <nav class="main-navigation">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="collapse navbar-collapse" id="main-menu =">
+                            <ul class="menu">
+                            <li><div class="nav-left">
+                                    <img src="image/logo.png" alt="">
+                                </div></li>
+                                <li>        <div class="nav-search">
+                                        <input type="text" class="form-control" placeholder="搜索">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div></li>
+                              <li id="create" role="presentation">
+                                <body onload="run()">
+                                  <a href="javascript:void(0)">
+                                    <span id="sp">展示自我</span>
+                                  </a>
+                                </body>
+                              </li>
+                              <li id="all" role="presentation">
+                                <a href="javascript:void(0)">匹配对象</a>
+                              </li>
+                              <li id="help" role="presentation">
+                                <a href="javascript:void(0)">约会成就</a>
+                              </li>
+                              <li id="about" role="presentation">
+                                <a href="javascript:void(0)">账户余额</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+      
+                  <main class="col-md-8 main-content">
+                    <article id="110" class="post">
+                      <div class="post-content">
+                        <div>
+                          <div class="panel panel-success">
+                            <div align="center"id="searchresult">
+      
+                              <div class="loading">
+                                <br>点击展示自我注册,开始使用
+                              </div>
+      
+                              <div class="panel-body">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </main>
+      
+      
+                </div>
+            </section>
+      
+      
+      
+          </div>
+      <!--
+    <div align="center" class="banner">
         <img src="https://ws2.sinaimg.cn/large/006tKfTcly1fs50eelx4kj30rs0h8dhn.jpg" alt="">
     </div>
 
@@ -41,12 +157,12 @@
         <p>性别</p>
         <p>爱好</p>
         <p>城市</p>
-    </div>
+    </div>-->
 </body>
-
+<!--
 <footer>
     <p>让我们一起恋爱吧！</p>
 
 </footer>
-
+-->
 </html>
