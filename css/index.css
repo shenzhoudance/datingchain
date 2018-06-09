@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .main-header h1 {
     color: #fff;
     font-weight: 400;
@@ -25,7 +24,7 @@
 }
 
 .foot p{
-    color: rgb(10, 158, 226);
+    color: #fff;
     font-weight: 400;
 }
 
@@ -81,20 +80,4 @@
     border: 0;
     font-size: 14px;
     cursor: pointer
-=======
-
-.body{
-   
-
-}
-
-.nav{
-
-}
-
-.banner{
-    width: 100%;
-    height: 640px;
- 
->>>>>>> 5ab7c408b380a4b03b3eaad7726cb5980b85966f
 }
