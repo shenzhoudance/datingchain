@@ -1,0 +1,83 @@
+.main-header h1 {
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+.menu li {
+    float: left;
+    display: inline;
+    margin-left: 180px;  
+    
+}
+
+.menu li a p{
+    font-weight: 400;
+    color: rgb(233, 7, 7);
+}
+
+.foot p{
+    color: rgb(10, 158, 226);
+    font-weight: 400;
+}
+
+.ripple-container .ripple {
+    background-color: rgba(255, 255, 255, 0.4);
+    animation: ripple 2s forwards cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.button1 {
+    background-color: rgb(230, 179, 69);
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 14px;
+    cursor: pointer
+}
+
+#savebidbutton {
+    background-color: #4560E6;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 14px;
+    cursor: pointer
+}
+
+.button2 {
+    background-color: #F2BC18;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 14px;
+    cursor: pointer
+}
+
+.button3 {
+    background-color: #12B362;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 14px;
+    cursor: pointer
+}
