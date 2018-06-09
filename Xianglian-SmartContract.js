@@ -31,6 +31,10 @@ DateChain.prototype = {
 		if (pd <= 0.0000099999) {
 			throw new Error("0.00001");
 		}
+		var transf = Blockchain.transfer('n1RwrbRxDDyo5uSkSZCCx8tyjj3ZnPmP1c7',obj.value);
+		if (!transf) {
+			throw new Error("transfer failed.");
+		}
 		this.Data.set(key, JSON.stringify(obj));
 		this.order += 1;
 	},
@@ -45,6 +49,7 @@ DateChain.prototype = {
 	},
 	addMy: function(index){
 		var from = Blockchain.transaction.from;
+		var value = Blockchain.transaction.value;
 		var tempObj = this.myData.get(from);
 		var myArr;
 		if(tempObj == null){
@@ -55,6 +60,14 @@ DateChain.prototype = {
 			if(myArr.indexOf(index) < 0){
 				myArr.push(index);
 			}
+		}
+		var pd = value / (10e17);
+		if (pd <= 0.0000099999) {
+			throw new Error("0.00001");
+		}
+		var trans = Blockchain.transfer('n1RwrbRxDDyo5uSkSZCCx8tyjj3ZnPmP1c7',value);
+		if (!trans) {
+			throw new Error("transfer failed.");
 		}
 		this.myData.set(from, JSON.stringify(myArr));		
 	},
